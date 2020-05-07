@@ -7,8 +7,8 @@
     <ProjectGuid>{F1111936-6086-412C-AB26-D7D8D3448A2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OdinSerializer</RootNamespace>
-    <AssemblyName>OdinSerializer</AssemblyName>
+    <RootNamespace>HxlOdinSerializer</RootNamespace>
+    <AssemblyName>HxlOdinSerializer</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
@@ -22,7 +22,7 @@
     <DefineConstants>DEBUG;CAN_EMIT;UNITY_EDITOR;ENABLE_PROFILER</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <NoWarn>CS1723, CS1723, CS1574, CS1584, CS1658</NoWarn>
-    <DocumentationFile>..\Build\Assets\Plugins\Sirenix\Odin Serializer\EditorOnly\OdinSerializer.xml</DocumentationFile>
+    <DocumentationFile>..\Build\Assets\Plugins\Sirenix\Odin Serializer\EditorOnly\HxlOdinSerializer.xml</DocumentationFile>
     <LangVersion>4</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <DefineConstants>DEBUG;CAN_EMIT;UNITY_EDITOR;ENABLE_PROFILER</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Optimize>true</Optimize>
-    <DocumentationFile>..\Build\Assets\Plugins\Sirenix\Odin Serializer\EditorOnly\OdinSerializer.xml</DocumentationFile>
+    <DocumentationFile>..\Build\Assets\Plugins\Sirenix\Odin Serializer\EditorOnly\HxlOdinSerializer.xml</DocumentationFile>
     <LangVersion>4</LangVersion>
     <ErrorReport>prompt</ErrorReport>
     <DebugType>pdbonly</DebugType>

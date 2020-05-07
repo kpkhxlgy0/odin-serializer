@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     /// <summary>
     /// Provides an easy way of implementing custom formatters.

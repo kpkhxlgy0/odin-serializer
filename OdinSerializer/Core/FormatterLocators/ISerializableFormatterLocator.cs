@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatterLocator(typeof(ISerializableFormatterLocator), -110)]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using Utilities;
     using System;

@@ -34,9 +34,9 @@ namespace OdinSerializer.Utilities.Editor
 
             odinSerializerDir = odinSerializerDir.Substring(unityDataPath.Length).TrimStart('/');
 
-            EditorAssemblyPath    = odinSerializerDir + "/EditorOnly/OdinSerializer.dll";
-            AOTAssemblyPath       = odinSerializerDir + "/AOT/OdinSerializer.dll";
-            JITAssemblyPath       = odinSerializerDir + "/JIT/OdinSerializer.dll";
+            EditorAssemblyPath    = odinSerializerDir + "/EditorOnly/HxlOdinSerializer.dll";
+            AOTAssemblyPath       = odinSerializerDir + "/AOT/HxlOdinSerializer.dll";
+            JITAssemblyPath       = odinSerializerDir + "/JIT/HxlOdinSerializer.dll";
             GenerateAssembliesDir = odinSerializerDir + "/Generated";
 
             if  (!File.Exists(EditorAssemblyPath))  throw new FileNotFoundException("Make sure all release configurations specified in the Visual Studio project are built.", EditorAssemblyPath);

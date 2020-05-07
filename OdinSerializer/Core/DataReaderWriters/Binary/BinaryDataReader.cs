@@ -16,9 +16,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
-    using OdinSerializer.Utilities.Unsafe;
+    using HxlOdinSerializer.Utilities.Unsafe;
     using System;
     using System.Collections.Generic;
     using System.IO;

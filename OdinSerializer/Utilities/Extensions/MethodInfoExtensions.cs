@@ -16,7 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer.Utilities
+namespace HxlOdinSerializer.Utilities
 {
     using System;
     using System.Linq;

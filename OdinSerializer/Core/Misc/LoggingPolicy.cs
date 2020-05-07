@@ -1,4 +1,4 @@
-﻿namespace OdinSerializer
+﻿namespace HxlOdinSerializer
 {
     /// <summary>
     /// The policy for which level of logging to do during serialization and deserialization.

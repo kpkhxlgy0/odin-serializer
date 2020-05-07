@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(QueueFormatter<,>))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System;
     using System.Collections.Generic;

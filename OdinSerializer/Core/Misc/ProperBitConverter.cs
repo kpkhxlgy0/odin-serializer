@@ -21,7 +21,7 @@
 
 using System.Globalization;
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System;
     using System.Runtime.InteropServices;

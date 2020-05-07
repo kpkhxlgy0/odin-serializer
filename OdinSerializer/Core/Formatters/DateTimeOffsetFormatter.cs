@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(DateTimeOffsetFormatter))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System.Globalization;
     using System;

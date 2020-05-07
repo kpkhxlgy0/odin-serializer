@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(LayerMaskFormatter))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using UnityEngine;
 

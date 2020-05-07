@@ -16,10 +16,10 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System.Globalization;
-    using OdinSerializer.Utilities;
+    using HxlOdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
     using System.Linq;

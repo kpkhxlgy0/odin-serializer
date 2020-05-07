@@ -15,7 +15,7 @@
 // limitations under the License.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     /// <summary>
     /// Types of prefab modification that can be applied.

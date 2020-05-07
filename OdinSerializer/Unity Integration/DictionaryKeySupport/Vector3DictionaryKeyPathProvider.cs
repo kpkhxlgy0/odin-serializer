@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterDictionaryKeyPathProvider(typeof(Vector3DictionaryKeyPathProvider))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System.Globalization;
     using UnityEngine;

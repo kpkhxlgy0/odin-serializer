@@ -16,18 +16,18 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(DoubleLookupDictionaryFormatter<,,>))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
-    using OdinSerializer.Utilities;
+    using HxlOdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
 
     /// <summary>
-    /// Custom Odin serialization formatter for <see cref="DoubleLookupDictionary{TFirstKey, TSecondKey, TValue}"/>.
+    /// Custom Odin serialization formatter for <see cref="DoubleLookupDictionary{TFirstKey,TSecondKey,TValue}"/>.
     /// </summary>
     /// <typeparam name="TPrimary">Type of primary key.</typeparam>
     /// <typeparam name="TSecondary">Type of secondary key.</typeparam>

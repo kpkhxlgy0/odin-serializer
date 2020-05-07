@@ -24,7 +24,7 @@
 #define CAN_EMIT
 #endif
 
-namespace OdinSerializer.Utilities
+namespace HxlOdinSerializer.Utilities
 {
     using System;
     using System.Reflection;

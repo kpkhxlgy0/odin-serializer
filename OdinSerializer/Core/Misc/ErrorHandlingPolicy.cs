@@ -1,4 +1,4 @@
-﻿namespace OdinSerializer
+﻿namespace HxlOdinSerializer
 {
     /// <summary>
     /// The policy for handling errors during serialization and deserialization.

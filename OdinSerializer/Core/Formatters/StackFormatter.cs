@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(StackFormatter<,>))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using System;
     using System.Collections.Generic;

@@ -16,11 +16,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-using OdinSerializer;
+using HxlOdinSerializer;
 
 [assembly: RegisterFormatter(typeof(Color32Formatter))]
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
     using UnityEngine;
 

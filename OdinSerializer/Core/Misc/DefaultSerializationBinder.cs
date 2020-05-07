@@ -16,9 +16,9 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace OdinSerializer
+namespace HxlOdinSerializer
 {
-    using OdinSerializer.Utilities;
+    using HxlOdinSerializer.Utilities;
     using System;
     using System.Collections.Generic;
     using System.Linq;
