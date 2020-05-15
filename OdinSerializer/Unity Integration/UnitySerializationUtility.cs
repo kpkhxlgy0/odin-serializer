@@ -572,7 +572,7 @@ namespace HxlOdinSerializer
 
                     bool prefabDataIsFromSelf = false;
 
-                    if (OdinPrefabSerializationEditorUtility.ObjectIsPrefabInstance(unityObject))
+                    if (!(unityObject is ScriptableObject) && OdinPrefabSerializationEditorUtility.ObjectIsPrefabInstance(unityObject))
                     {
                         prefab = OdinPrefabSerializationEditorUtility.GetCorrespondingObjectFromSource(unityObject);
 
