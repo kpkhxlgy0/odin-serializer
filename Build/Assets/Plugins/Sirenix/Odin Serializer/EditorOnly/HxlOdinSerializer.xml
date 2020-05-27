@@ -140,6 +140,12 @@
             execution will always predict it correctly.
             </summary>
         </member>
+        <member name="T:HxlOdinSerializer.OdinNonSerializedAttribute">
+            <summary>
+            Indicates that an instance field or auto-property should be serialized by Odin.
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
         <member name="M:HxlOdinSerializer.Editor.AOTSupportUtilities.ScanProjectForSerializedTypes(System.Collections.Generic.List{System.Type}@,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Collections.Generic.List{System.String})">
             <summary>
             Scans the project's build scenes and resources, plus their dependencies, for serialized types to support. Progress bars are shown during the scan.

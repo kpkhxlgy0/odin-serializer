@@ -308,7 +308,7 @@ namespace HxlOdinSerializer
                 return false;
             }
 
-            if (fieldInfo.IsDefined<NonSerializedAttribute>())
+            if (fieldInfo.IsDefined<NonSerializedAttribute>() || fieldInfo.IsDefined<OdinNonSerializedAttribute>())
             {
                 return false;
             }

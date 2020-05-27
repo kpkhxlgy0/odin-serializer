@@ -94,7 +94,7 @@ namespace HxlOdinSerializer
                                     return true;
                                 }
 
-                                return !member.IsDefined<NonSerializedAttribute>(true);
+                                return !member.IsDefined<NonSerializedAttribute>(true) && !member.IsDefined<OdinNonSerializedAttribute>(true);
                             });
                         }
                     }
@@ -134,7 +134,7 @@ namespace HxlOdinSerializer
 
                                 // If OdinSerializeAttribute is defined, NonSerializedAttribute is ignored.
                                 // This enables users to ignore Unity's infinite serialization depth warnings.
-                                if (member.IsDefined<NonSerializedAttribute>(true) && !member.IsDefined<OdinSerializeAttribute>())
+                                if ((member.IsDefined<NonSerializedAttribute>(true) || member.IsDefined<OdinNonSerializedAttribute>(true)) && !member.IsDefined<OdinSerializeAttribute>())
                                 {
                                     return false;
                                 }
@@ -179,7 +179,7 @@ namespace HxlOdinSerializer
                                     return false;
                                 }
 
-                                if (member.IsDefined<NonSerializedAttribute>())
+                                if (member.IsDefined<NonSerializedAttribute>() || member.IsDefined<OdinNonSerializedAttribute>())
                                 {
                                     return false;
                                 }
