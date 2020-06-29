@@ -822,6 +822,7 @@
              <remarks>
              <para>Note that in the special case of the type <see cref="T:UnityEngine.Quaternion"/>, a special equality comparer is returned that only checks whether all the Quaternion components are equal.</para>
              <para>This is because, by default, Quaternion's equality operator is broken when operating on invalid quaternions; "default(Quaternion) == default(Quaternion)" evaluates to false, and this causes a multitude of problems.</para>
+             <para>Special delegates are also returned for float and double, that consider float.NaN to be equal to float.NaN, and double.NaN to be equal to double.NaN.</para>
              </remarks>
         </member>
         <member name="M:HxlOdinSerializer.Utilities.TypeExtensions.GetAttribute``1(System.Type,System.Boolean)">
@@ -9616,6 +9617,8 @@
         <member name="T:HxlOdinSerializer.UnitySerializationUtility">
             <summary>
             Provides an array of utility wrapper methods for easy serialization and deserialization of Unity objects of any type.
+            Note that, during serialization, it is always assumed that we are running on Unity's main thread. Deserialization can
+            happen on any thread, and all API's interacting with deserialization are thread-safe.
             <para />
             Note that setting the IndexReferenceResolver on contexts passed into methods on this class will have no effect, as it will always
             be set to a UnityReferenceResolver.
@@ -9624,6 +9627,11 @@
         <member name="F:HxlOdinSerializer.UnitySerializationUtility.SBP_ContentPipelineType">
             <summary>
             From the new scriptable build pipeline package
+            </summary>
+        </member>
+        <member name="M:HxlOdinSerializer.UnitySerializationUtility.PrefabDeserializeUtility.GetSceneObjectsToKeepSet(UnityEngine.Object,System.Boolean)">
+            <summary>
+            Note: it is assumed that code calling this is holding the DeserializePrefabCaches_LOCK lock, and will continue to hold it while the returned hashset is being modified
             </summary>
         </member>
         <member name="P:HxlOdinSerializer.UnitySerializationUtility.ForceEditorModeSerialization">
