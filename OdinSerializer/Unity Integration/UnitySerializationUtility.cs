@@ -968,7 +968,7 @@ namespace HxlOdinSerializer
                     format = DataFormat.Binary;
                 }
 
-                UnitySerializationUtility.SerializeUnityObject(unityObject, ref data.SerializedBytes, ref data.ReferencedUnityObjects, format);
+                UnitySerializationUtility.SerializeUnityObject(unityObject, ref data.SerializedBytes, ref data.ReferencedUnityObjects, format, serializeUnityFields, context);
                 data.SerializedFormat = format;
             }
 #endif
